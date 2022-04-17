@@ -9,7 +9,8 @@ public class DestroyByContact : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Instantiate(explosion, transform.position, transform.rotation);
+        // Instantiate(explosion, transform.position, transform.rotation);
+        if (other.CompareTag("limite")) return;
         Destroy(other.gameObject);
         Destroy(gameObject);
     }
