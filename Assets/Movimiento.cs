@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour {
 
+
+
     [Header("Movimiento")]
     public float speed;
     private Rigidbody rig;
@@ -14,13 +16,27 @@ public class Movimiento : MonoBehaviour {
     public float fireRate;
     private float nextFire;
 
+    private int mleft=-550,mright=550,mtop= 0, mbotton=100;
     void Start() {
 
         rig = GetComponent<Rigidbody>();   
 
     }
 
-   
+    void FixedUpdate()
+    {
+        float movimientohorizontal = Input.GetAxis("Horizontal");
+
+        float movimientovertical = Input.GetAxis("Vertical");
+
+        Vector3 control = new Vector3(movimientohorizontal, 0f, movimientovertical);
+
+        rig.velocity = control * speed;
+
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, mleft, mright), Mathf.Clamp(transform.position.y, mtop, mbotton));
+
+    }
+
     void Update() {
 
         if (Input.GetButton("Fire1") && Time.time > nextFire)
@@ -29,15 +45,7 @@ public class Movimiento : MonoBehaviour {
             Instantiate(Disparo, shotSpawn.position, shotSpawn.rotation);
         }
 
-        float movimientohorizontal = Input.GetAxis("Horizontal");
-
-        float movimientovertical = Input.GetAxis("Vertical");
-
-        Vector3 control = new Vector3(movimientohorizontal, 0f, movimientovertical);
-
-        rig.velocity = control * speed;
-       
-
+        
 
     }
 
