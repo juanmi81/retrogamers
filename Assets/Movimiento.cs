@@ -16,7 +16,7 @@ public class Movimiento : MonoBehaviour {
     public float fireRate;
     private float nextFire;
 
-    private int mleft=-550,mright=550,mtop= 0, mbotton=100;
+    private int mleft=-550,mright=550,mtop= 0, mbotton=100, mcerca= -100, mlejos= 1500;
     void Start() {
 
         rig = GetComponent<Rigidbody>();   
@@ -33,7 +33,7 @@ public class Movimiento : MonoBehaviour {
 
         rig.velocity = control * speed;
 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, mleft, mright), Mathf.Clamp(transform.position.y, mtop, mbotton));
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, mleft, mright), Mathf.Clamp(transform.position.y, mtop, mbotton), Mathf.Clamp(transform.position.z, mcerca, mlejos));
 
     }
 
