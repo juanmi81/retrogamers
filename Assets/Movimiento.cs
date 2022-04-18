@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Movimiento : MonoBehaviour {
 
@@ -25,9 +26,9 @@ public class Movimiento : MonoBehaviour {
 
     void FixedUpdate()
     {
-        float movimientohorizontal = Input.GetAxis("Horizontal");
+        float movimientohorizontal = CrossPlatformInputManager.GetAxis("Horizontal");
 
-        float movimientovertical = Input.GetAxis("Vertical");
+        float movimientovertical = CrossPlatformInputManager.GetAxis("Vertical");
 
         Vector3 control = new Vector3(movimientohorizontal, 0f, movimientovertical);
 
@@ -39,7 +40,7 @@ public class Movimiento : MonoBehaviour {
 
     void Update() {
 
-        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        if (CrossPlatformInputManager.GetButton("Fire1") && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
             Instantiate(Disparo, shotSpawn.position, shotSpawn.rotation);
