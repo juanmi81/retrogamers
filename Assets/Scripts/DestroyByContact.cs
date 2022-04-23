@@ -13,11 +13,10 @@ public class DestroyByContact : MonoBehaviour
         if (other.CompareTag("limite")) return;
         
         Destroy(other.gameObject);
-        Instantiate(explosion, transform.localPosition, Quaternion.identity);
         Destroy(gameObject);
-        Destroy(explosion);
-        return;
-            
-        
+        Instantiate(explosion, transform.position, transform.rotation);
+
+
+
     }
 }
