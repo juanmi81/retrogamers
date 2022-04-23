@@ -6,12 +6,14 @@ public class DestroyByContact : MonoBehaviour
 {
     public GameObject explosion;
 
+    public float damage;
 
     void OnTriggerEnter(Collider other)
     {
         // Instantiate(explosion, transform.position, transform.rotation);
         if (other.CompareTag("limite")) return;
-        Destroy(other.gameObject);
+        if (other.CompareTag("Jugador")) { other.GetComponent<Barradevida>().vidaActual -= damage; }
+        else { Destroy(other.gameObject); }
         Destroy(gameObject);
     }
 }
