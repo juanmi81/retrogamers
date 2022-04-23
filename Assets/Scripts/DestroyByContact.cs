@@ -9,9 +9,15 @@ public class DestroyByContact : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        // Instantiate(explosion, transform.position, transform.rotation);
+
         if (other.CompareTag("limite")) return;
+        
         Destroy(other.gameObject);
+        Instantiate(explosion, transform.localPosition, Quaternion.identity);
         Destroy(gameObject);
+        Destroy(explosion);
+        return;
+            
+        
     }
 }
