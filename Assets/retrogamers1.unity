@@ -492,7 +492,6 @@ CapsuleCollider:
   m_Height: 134.5426
   m_Direction: 2
   m_Center: {x: -0.000011444092, y: 3.4407623, z: 11.271441}
-<<<<<<< HEAD
 --- !u!114 &416847648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,7 +507,6 @@ MonoBehaviour:
   barraDevida: {fileID: 347514335}
   vidaActual: 100
   vidaInicial: 100
-=======
 --- !u!1001 &512605441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -699,7 +697,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85142e496866b417b80ff21802286d96, type: 3}
->>>>>>> impl_aster_explo
 --- !u!1 &623657422
 GameObject:
   m_ObjectHideFlags: 0
