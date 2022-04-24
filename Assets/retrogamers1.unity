@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06615649, g: 0.15344906, b: 0.0577884, a: 1}
+  m_IndirectSpecularColor: {r: 0.06864999, g: 0.15307403, b: 0.062157914, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &74870698 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400016, guid: 9529ecc3d479da5499993355e6c2cb4f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1690156260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &120731687
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,6 +598,8 @@ MonoBehaviour:
   barraDevida: {fileID: 347514335}
   vidaActual: 100
   vidaInicial: 100
+  explosion_player: {fileID: 1587261729604890, guid: 600ec83cba1cec448bf41a6607229741,
+    type: 3}
 --- !u!1 &617730304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2243,7 +2257,7 @@ MonoBehaviour:
   spawnWait: 1
   startWait: 2
   waveWait: 2
-  scoreText: {fileID: 1919711618}
+  scoreText: {fileID: 74870698}
 --- !u!114 &1808806452
 MonoBehaviour:
   m_ObjectHideFlags: 0

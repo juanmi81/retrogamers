@@ -53,7 +53,7 @@ public class GameController : MonoBehaviour
 
     }
 
-    void UpdateScore()
+    public void UpdateScore()
     {
 
         scoreText.text = "Puntuacion: " + score;
