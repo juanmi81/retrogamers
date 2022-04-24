@@ -92,6 +92,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 1280240331523082, guid: 45ae5851ef2832044bba82850372d67b, type: 3}
   damage: 5
+  scoreValue: 10
+  gameController: {fileID: 0}
 --- !u!1001 &5021139039062885307
 PrefabInstance:
   m_ObjectHideFlags: 0
