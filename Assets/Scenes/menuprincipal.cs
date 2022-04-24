@@ -20,12 +20,12 @@ public class menuprincipal : MonoBehaviour
     //
     public void escenajuego()
     {
-        SceneManager.LoadScene("JUEGO");  
+        SceneManager.LoadScene("retrogamers1");  
     }
 
     public void cargarpartida()
     {
-        SceneManager.LoadScene("JUEGO");
+        SceneManager.LoadScene("retrogamers1");
     }
 
     public void sonido()
@@ -36,5 +36,6 @@ public class menuprincipal : MonoBehaviour
     public void salir()
     {
         Application.Quit();
+        Debug.Log("salio del juego");
     }
 }

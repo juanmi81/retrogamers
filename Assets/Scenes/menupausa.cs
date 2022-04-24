@@ -5,21 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class menupausa : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private GameObject BotonPause;
+    [SerializeField] private GameObject MenuPausa;
 
     public void escenajuego()
     {
-        SceneManager.LoadScene("JUEGO");
+        //SceneManager.LoadScene("retrogamers1");
+        Time.timeScale = 1f;
+        BotonPause.SetActive(true);
+        MenuPausa.SetActive(false);
     }
 
     public void guardarpartida()
@@ -34,6 +28,7 @@ public class menupausa : MonoBehaviour
 
     public void salir()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MENUPRINCIPAL");
     }
 }
