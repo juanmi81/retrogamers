@@ -20,6 +20,6 @@ public class findeljuego : MonoBehaviour
    
     public void salir()
     {
-        SceneManager.LoadScene("MENUDEPAUSA");
+        SceneManager.LoadScene("MENUPRINCIPAL");
     }
 }

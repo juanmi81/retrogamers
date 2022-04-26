@@ -20,12 +20,13 @@ public class menuprincipal : MonoBehaviour
     //
     public void escenajuego()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("retrogamers1");  
     }
 
     public void cargarpartida()
     {
-        SceneManager.LoadScene("retrogamers1");
+        SceneManager.LoadScene("FINJUEGO");
     }
 
     public void sonido()

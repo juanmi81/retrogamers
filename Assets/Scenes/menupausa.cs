@@ -28,7 +28,10 @@ public class menupausa : MonoBehaviour
 
     public void salir()
     {
-        Time.timeScale = 1f;
         SceneManager.LoadScene("MENUPRINCIPAL");
+    }
+    public void marcadores()
+    {
+        SceneManager.LoadScene("FINJUEGO");
     }
 }

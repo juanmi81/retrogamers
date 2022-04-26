@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Barradevida : MonoBehaviour
 {
+    [SerializeField] private GameObject GAMEOVER;
     public Image barraDevida;
 
     public float vidaActual;
@@ -18,6 +19,8 @@ public class Barradevida : MonoBehaviour
         barraDevida.fillAmount = vidaActual / vidaInicial;
         if (barraDevida.fillAmount <= 0)
         {
+            Time.timeScale = 1f;
+            GAMEOVER.SetActive(true);
             Destroy(gameObject);
             Instantiate(explosion_player, transform.position, transform.rotation);
         }

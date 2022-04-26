@@ -9,12 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MENUPRINCIPAL.unity
     guid: c371c21c383d86547b55ac6273a61bca
   - enabled: 1
-    path: Assets/JUEGO.unity
-    guid: 701f73de088de184d9567a10c7ea2cdb
-  - enabled: 1
-    path: Assets/Scenes/MENUDEPAUSA.unity
-    guid: 411c26cc565c84c4fa93bc8ff062bd5a
-  - enabled: 1
     path: Assets/retrogamers1.unity
     guid: 7753c509b22a6b94ea590674eedb08f3
+  - enabled: 1
+    path: Assets/Scenes/FINJUEGO.unity
+    guid: a4447299663b5b74dab93bdf6f7ad10c
   m_configObjects: {}
