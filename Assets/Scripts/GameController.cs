@@ -15,7 +15,11 @@ public class GameController : MonoBehaviour
 
     private int score;
     public Text scoreText;
-
+    string nameplayer;
+    private void OnEnable()
+    {
+        nameplayer = PlayerPrefs.GetString("name");
+    }
     // Start is called before the first frame update
     void Start()   
     {
@@ -56,6 +60,6 @@ public class GameController : MonoBehaviour
     public void UpdateScore()
     {
 
-        scoreText.text = "Puntuacion: " + score;
+        scoreText.text = nameplayer + " Puntuacion: " + score;
     }
 }

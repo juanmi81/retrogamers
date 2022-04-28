@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class menuprincipal : MonoBehaviour
 {
+
+    [SerializeField] private GameObject Ingresanombre;
+    public InputField user;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +21,16 @@ public class menuprincipal : MonoBehaviour
         
     }
 
+    public void DameNombre()
+    {
+        Ingresanombre.SetActive(true);
+    }
+
     //
     public void escenajuego()
     {
+
+        PlayerPrefs.SetString("name", user.text);
         Time.timeScale = 1f;
         SceneManager.LoadScene("retrogamers1");  
     }
