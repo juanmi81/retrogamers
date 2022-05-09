@@ -2,22 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class findeljuego : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+{ 
+
+    public void Scena2()
     {
-        
+       // Time.timeScale = 1f;
+        SceneManager.LoadScene("retrogamers2");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Scena3()
     {
-        
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("retrogamers3");
     }
 
-   
     public void salir()
     {
         SceneManager.LoadScene("MENUPRINCIPAL");
