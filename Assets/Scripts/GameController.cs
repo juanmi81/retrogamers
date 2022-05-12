@@ -7,8 +7,10 @@ public class GameController : MonoBehaviour
 
 {
     public GameObject enemigo;
+    public GameObject cofre;
     public Vector3 spawnValues;
     public int hazardCount;
+    public int cofrescount;
     public float spawnWait;
     public float startWait;
     public float waveWait;
@@ -43,6 +45,16 @@ public class GameController : MonoBehaviour
                 yield return new WaitForSeconds(spawnWait);
 
             }
+
+            for (int i = 0; i < cofrescount; i++)
+            {
+                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+                Instantiate(cofre, spawnPosition, Quaternion.identity);
+                yield return new WaitForSeconds(spawnWait);
+
+            }
+
+
             yield return new WaitForSeconds(waveWait);
         
         }

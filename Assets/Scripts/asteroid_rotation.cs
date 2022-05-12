@@ -16,11 +16,7 @@ public class asteroid_rotation : MonoBehaviour
         rig.velocity = new Vector3(0, 0, Random.Range(-200, -200));
     }
 
-    //void Update() 
-    //{
-       
-        
-    //}
+   
 
     
 }
