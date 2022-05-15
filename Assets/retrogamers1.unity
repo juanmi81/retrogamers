@@ -3453,9 +3453,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemigo: {fileID: 5021139039575800758, guid: 85142e496866b417b80ff21802286d96, type: 3}
+  enemigo2: {fileID: 1664191669066785925, guid: c8d5ef8cb50544674a3160611eae5542,
+    type: 3}
   cofre: {fileID: 1580182975}
   spawnValues: {x: 600, y: 0, z: 1850}
   hazardCount: 20
+  hazard2Count: 3
   cofrescount: 1
   spawnWait: 1
   startWait: 2

@@ -70,17 +70,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 5090c1d92c3e3034a85460b495fcf820,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 120
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5090c1d92c3e3034a85460b495fcf820,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 120
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5090c1d92c3e3034a85460b495fcf820,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 120
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5090c1d92c3e3034a85460b495fcf820,
         type: 3}
@@ -95,17 +95,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 5090c1d92c3e3034a85460b495fcf820,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 230
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5090c1d92c3e3034a85460b495fcf820,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7660445
+      value: 0.49999994
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5090c1d92c3e3034a85460b495fcf820,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.6427876
+      value: 0.86602545
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5090c1d92c3e3034a85460b495fcf820,
         type: 3}
@@ -120,7 +120,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 5090c1d92c3e3034a85460b495fcf820,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 80
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5090c1d92c3e3034a85460b495fcf820,
         type: 3}
@@ -180,19 +180,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7221953659971353996}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1993511842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664191669066785925}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88982ff3c3f461446897b9878a43dd0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
 --- !u!54 &5614833
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -217,9 +204,50 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664191669066785925}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.32151538
   m_Height: 0.90331554
   m_Direction: 0
   m_Center: {x: 0, y: 1.6111804, z: 0.0000023732152}
+--- !u!114 &-7587618390302004055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664191669066785925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02e4c3f22db6494bb26507c28948f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1981774452263784, guid: 69bc9de1566254e4db3ef4d734a7fbcd, type: 3}
+  damage: 50
+  scoreValue: 50
+--- !u!114 &1993511842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664191669066785925}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88982ff3c3f461446897b9878a43dd0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+--- !u!114 &8636208038271716310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664191669066785925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398c59de6596e476bb8b39cc776835ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 1

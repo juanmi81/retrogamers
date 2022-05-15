@@ -7,9 +7,11 @@ public class GameController : MonoBehaviour
 
 {
     public GameObject enemigo;
+    public GameObject enemigo2;
     public GameObject cofre;
     public Vector3 spawnValues;
     public int hazardCount;
+    public int hazard2Count;
     public int cofrescount;
     public float spawnWait;
     public float startWait;
@@ -46,6 +48,15 @@ public class GameController : MonoBehaviour
 
             }
 
+            for (int i = 0; i < hazard2Count; i++)
+            {
+                Vector3 spawnPosition2 = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), -120, spawnValues.z);
+                Instantiate(enemigo2, spawnPosition2 , Quaternion.identity);
+                yield return new WaitForSeconds(spawnWait);
+
+            }
+
+
             for (int i = 0; i < cofrescount; i++)
             {
                 Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
@@ -54,6 +65,7 @@ public class GameController : MonoBehaviour
 
             }
 
+            
 
             yield return new WaitForSeconds(waveWait);
         
