@@ -6,6 +6,13 @@ using UnityEngine.UI;
 
 public class menuprincipal : MonoBehaviour
 {
+    [SerializeField] private GameObject damenombre;
+
+    public void jugadornombre()
+    {
+        damenombre.SetActive(true);
+        // SceneManager.LoadScene("MENUDEPAUSA");
+    }
 
     [SerializeField] private GameObject Ingresanombre;
     public InputField user;

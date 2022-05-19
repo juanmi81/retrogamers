@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MENUPRINCIPAL.unity
+    path: Assets/MENUPRINCIPAL.unity
     guid: c371c21c383d86547b55ac6273a61bca
   - enabled: 1
     path: Assets/retrogamers1.unity
