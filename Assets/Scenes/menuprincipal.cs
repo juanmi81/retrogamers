@@ -7,15 +7,18 @@ using UnityEngine.UI;
 public class menuprincipal : MonoBehaviour
 {
     [SerializeField] private GameObject damenombre;
+    public InputField user;
+
+
+    private string nombreprefs = "Nombre";
 
     public void jugadornombre()
     {
         damenombre.SetActive(true);
-        // SceneManager.LoadScene("MENUDEPAUSA");
     }
 
     [SerializeField] private GameObject Ingresanombre;
-    public InputField user;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +40,8 @@ public class menuprincipal : MonoBehaviour
     public void escenajuego()
     {
 
-      //  PlayerPrefs.SetString("name", user.text);
+        //  PlayerPrefs.SetString("name", user.text);
+        savedata();
         Time.timeScale = 1f;
         SceneManager.LoadScene("retrogamers1");  
     }
@@ -57,4 +61,14 @@ public class menuprincipal : MonoBehaviour
         Application.Quit();
         Debug.Log("salio del juego");
     }
+
+    private void savedata()
+    {
+        PlayerPrefs.SetString(nombreprefs, user.text);
+    }
+    /*
+    private void loaddata()
+    {
+
+    }^*/
 }

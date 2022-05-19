@@ -286,8 +286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damenombre: {fileID: 353496339}
+  user: {fileID: 1009119759}
   Ingresanombre: {fileID: 0}
-  user: {fileID: 0}
 --- !u!4 &206190090
 Transform:
   m_ObjectHideFlags: 0
@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 353496342}
   - component: {fileID: 353496341}
   m_Layer: 5
-  m_Name: MenuPausa
+  m_Name: PedirNombre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

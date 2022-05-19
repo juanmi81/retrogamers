@@ -20,9 +20,18 @@ public class GameController : MonoBehaviour
     private int score;
     public Text scoreText;
     string nameplayer;
-    private void OnEnable()
+    private string nombreprefs = "Nombre";
+    private string scoreprefs = "score";
+
+
+    /* private void OnEnable()
+     {
+         nameplayer = PlayerPrefs.GetString("name");
+     }
+    */
+    private void Awake()
     {
-        nameplayer = PlayerPrefs.GetString("name");
+        loaddata();
     }
     // Start is called before the first frame update
     void Start()   
@@ -85,5 +94,21 @@ public class GameController : MonoBehaviour
     {
 
         scoreText.text = nameplayer + " Puntuacion: " + score;
+    }
+
+    private void OnDestroy()
+    {
+        savedata();
+    }
+
+    private void savedata()
+    {
+        PlayerPrefs.GetInt(scoreprefs, score);
+    }
+
+    private void loaddata()
+    {
+        nameplayer = PlayerPrefs.GetString(nombreprefs, "Carmen");
+        score = PlayerPrefs.GetInt(scoreprefs, 0);
     }
 }

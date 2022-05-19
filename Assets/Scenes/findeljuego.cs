@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class findeljuego : MonoBehaviour
-{ 
+{
+    private string scoreprefs = "score";
+
 
     public void Scena2()
     {
@@ -23,4 +25,5 @@ public class findeljuego : MonoBehaviour
     {
         SceneManager.LoadScene("MENUPRINCIPAL");
     }
+
 }
