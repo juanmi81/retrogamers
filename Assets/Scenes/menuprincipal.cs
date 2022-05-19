@@ -30,7 +30,7 @@ public class menuprincipal : MonoBehaviour
     public void escenajuego()
     {
 
-        PlayerPrefs.SetString("name", user.text);
+      //  PlayerPrefs.SetString("name", user.text);
         Time.timeScale = 1f;
         SceneManager.LoadScene("retrogamers1");  
     }
