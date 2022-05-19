@@ -11,7 +11,7 @@ public class findeljuego : MonoBehaviour
 
     public void Scena2()
     {
-       // Time.timeScale = 1f;
+        Time.timeScale = 1f;
         SceneManager.LoadScene("retrogamers2");
     }
 

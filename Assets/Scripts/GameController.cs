@@ -36,7 +36,6 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()   
     {
-        score = 0;
         UpdateScore();
         StartCoroutine(SpawnWaves());
     }
@@ -98,17 +97,18 @@ public class GameController : MonoBehaviour
 
     private void OnDestroy()
     {
+
         savedata();
     }
 
     private void savedata()
     {
-        PlayerPrefs.GetInt(scoreprefs, score);
+        PlayerPrefs.SetInt(scoreprefs, score);
     }
 
     private void loaddata()
     {
         nameplayer = PlayerPrefs.GetString(nombreprefs, "Carmen");
-        score = PlayerPrefs.GetInt(scoreprefs, 0);
+        score = PlayerPrefs.GetInt(scoreprefs, 20);
     }
 }

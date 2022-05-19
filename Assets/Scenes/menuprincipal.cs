@@ -8,12 +8,13 @@ public class menuprincipal : MonoBehaviour
 {
     [SerializeField] private GameObject damenombre;
     public InputField user;
-
+    private string scoreprefs = "score";
 
     private string nombreprefs = "Nombre";
 
     public void jugadornombre()
     {
+        PlayerPrefs.SetInt(scoreprefs, 0);
         damenombre.SetActive(true);
     }
 
