@@ -3492,7 +3492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FINNIVEL: {fileID: 1581567536}
-  timeRemaining: 20
+  timeRemaining: 240
 --- !u!114 &1808806454
 MonoBehaviour:
   m_ObjectHideFlags: 0
