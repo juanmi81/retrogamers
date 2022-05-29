@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour
 
     private int score;
     public Text scoreText;
+    public Text backmenu;
     string nameplayer;
     private string nombreprefs = "Nombre";
     private string scoreprefs = "score";
@@ -93,6 +94,7 @@ public class GameController : MonoBehaviour
     {
 
         scoreText.text = nameplayer + " Puntuacion: " + score;
+        backmenu.text = nameplayer + " Puntuacion: " + score;
     }
 
     private void OnDestroy()

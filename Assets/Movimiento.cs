@@ -17,7 +17,7 @@ public class Movimiento : MonoBehaviour {
     public float fireRate;
     private float nextFire;
 
-    private int mleft=-550,mright=550,mtop= 0, mbotton=100, mcerca= -100, mlejos= 1500;
+    private int mleft=-430,mright=420,mtop= 0, mbotton=100, mcerca= -100, mlejos= 1500;
     void Start() {
 
         rig = GetComponent<Rigidbody>();   
